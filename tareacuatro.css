@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	background: pink;
+}
+head h1{
+	font-size: 42px;
+	color:white;
+	line-height: 230;
+	font-weight: 300;
+	transition: all 0.5s ease;
+}
+.kenia{
+	width: 500px;
+	margin: 250px auto;
+	background: white;
+}
+.kenia ul{
+	list-style: none;
+}
+.marisol > li{
+	/*position: relative;*/
+	display: inline-block;
+}
+.marisol > li > a{
+	display: block;
+	padding: 15px 20px;
+	color:purple;
+	font-family: "open sans";
+	text-decoration: none;
+
+}
+.marisol  li a:hover{
+	color:orange;
+	transition: all .3s;
+}
+
+.menú{
+	position: absolute;
+	background: black;
+	/*width: 130%;*/
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 2.5s;
+}
+.menú li a{
+	display: block;
+	padding: 15px;
+	color:white;
+	font-family: "open sans"
+	text-decoration:none;
+
+}
+.marisol li:hover .menú{
+visibility: visible;
+opacity: 1;
+}
